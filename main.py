@@ -1,15 +1,16 @@
-import os
-import threading
-import time
+#importing modules
+import os                                   # os module is used to intract with operating system
+import threading                            # threading modile is used to syncronise threads
+import time                                 # time module is to use time
 import tkinter.messagebox
-from tkinter import *
+from tkinter import *                       # tkinter module is used to create graphical user interface(GUI)
 from tkinter import filedialog
 
 from tkinter import ttk
 from ttkthemes import themed_tk as tk
 
-from mutagen.mp3 import MP3
-from pygame import mixer
+from mutagen.mp3 import MP3                 # mutagen module handles audio in python
+from pygame import mixer                    # pygame is used hare to have multimedia in our music player
 
 root = tk.ThemedTk()
 root.get_themes()                 # Returns a list of all themes that can be set
